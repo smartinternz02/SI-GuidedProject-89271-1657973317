@@ -1,0 +1,223 @@
+
+
+<!DOCTYPE HTML>
+<html>
+<style>
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+     
+}
+html{
+    text-rendering: optimizeLegibility;
+    color:#555;
+    background-color: #cacbca;
+}
+
+
+.row {
+    max-width:1140px;
+    margin:0 auto;
+}
+
+
+.container {
+    margin-top: 40px;
+}
+
+header {
+
+
+ background-position:top;
+    background-size: cover;
+    background-attachment:fixed;
+    height:100vh;
+}
+
+.hero-text {
+    font-family:"Lato";
+    position:absolute;
+    width:1140px;
+    top:50%;
+    left:50%;
+  transform:translate(-50%,-50%);
+}
+
+
+
+.text-hero {
+    margin-top:0;
+    color:#FFF;
+    font-family:'Lato:ital';
+    font-size:240%;
+    font-weight:400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    
+}
+
+
+.btn{
+    font-family:'lato:ital';
+    display:inline-block;
+    padding:17px 35px;
+    border:solid 2px #fff;
+    font-weight:300;
+    text-decoration:none;
+    background-color:#9b59b6;
+    color:#fff;
+    border-radius:200px;
+    font-size: 17px;
+    margin-left: 50%;
+    margin-top: 3%;
+    transition: background-color 0.2s;
+}
+
+.btn:hover,
+.btn:active{
+    
+ display:inline-block;
+    padding:17px 35px;
+    border:solid 2px #fff;
+    font-weight:300;
+    text-decoration:none;
+    background-color:#4834d4;
+    color:#fff;
+    font-size: 17px;
+    border-radius:200px;
+}
+
+
+.nav-bar {
+    float:right;
+    list-style: none;
+    margin-top: 20px;
+}
+.nav-bar li{
+    display:inline-block;
+    
+     margin-left: 55px;
+  
+}
+
+.nav-bar li a:link,
+.nav-bar li a:visited{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#000;
+    font-size:120%;
+}
+.nav-bar li a:hover,
+.nav-bar li a:active{
+text-decoration: none;
+    text-transform: uppercase;
+    color:#ff1b1b;
+    border: solid 3px red;
+
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+.title1{
+color:black;
+ font-family:'Lato:ital';
+    float: left;
+padding-top:10px;
+padding-left: 50px;
+    font-size:200%;
+    font-weight:400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    }
+    
+    .redg{
+        height: 10%;
+        background-color: pink;
+    }
+   
+
+    .ig1{
+height: 200px;
+        width: 200px;
+        margin-top: 5%;
+        margin-left: 7%;
+        background-color: black;
+        transition: transform 5s;    }
+    .ig1:hover{
+        transform: rotate(360deg);
+    }
+    
+    .pr1{
+        margin-left: 25%;
+        color: red;
+    }
+    .pr2{
+       margin-left: 38%;
+        color: red;
+    }
+    .ig2{
+       height: 200px;
+        width: 200px;
+        margin-top: 5%;
+        margin-left: 7%;
+        background-color: black;
+        transition: transform 5s;  
+    }
+    .ig2:hover{
+       transform: rotate(360deg);
+    }
+    .container{
+        float: left;
+        margin-left: 25%;
+    }
+    .container1{
+       float: left;
+        margin-top: 2.5%;
+        margin-left: 10%;
+    }
+    .con{
+        width: 100%;
+        height:45%;
+        
+    }
+    .hihi{
+        margin-top: 20%;
+        margin-left: 20%;
+        color: black;
+    }
+</style>
+ <head>
+     <link rel="stylesheet" type='text/css' href='grid.css'>
+     <link rel="stylesheet" type='text/css' href='normalize.css'>
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap" rel="stylesheet">
+     <title> 
+   DISASTER CLASSIFICATION
+    </title>
+  </head>
+   <body>
+       <header class='blackg'>
+           <div class='redg'>
+           <h1 class="title1">DISASTER CLASSIFICATION</h1> 
+           <nav>   
+            <div class="row">
+                <ul class='nav-bar'>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/intro">Introduction</a></li>
+                <li><a href="/predict">Predict</a></li>
+                </ul>
+               </div>
+           </nav>
+           </div>
+           <h1 class='hihi'> Click The Button To Launch</h1>
+           <form action='/videopredict' method="post">
+           <input type="submit" value='Launch' class='btn'>
+           </form>
+       </header>
+       
+    
+     </body>
+</html>
